@@ -29,4 +29,4 @@ function(project_target_copy_to_output_directory __AFTER_TARGET__ __TARGET__)
     )
 endfunction()
 
-add_subdirectory("Project Extra 01-02")
+add_subdirectory("Project Extra 01-")
