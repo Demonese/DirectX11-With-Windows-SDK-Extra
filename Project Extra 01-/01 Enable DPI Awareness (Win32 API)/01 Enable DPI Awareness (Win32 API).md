@@ -89,8 +89,6 @@ SetProcessDpiAwarenessContext(DPI_AWARENESS_CONTEXT_PER_MONITOR_AWARE);
 SetProcessDpiAwarenessContext(DPI_AWARENESS_CONTEXT_PER_MONITOR_AWARE_V2);
 ```
 
-到了
-
 # 通过运行时加载 DLL 兼容多个 Windows 版本
 
 我们可以注意到，这三种方法分别出现于不同的时代，`SetProcessDPIAware` 是最早出现的，从 Windows Vista 开始就存在，随后 Windows 7、Windows 8 都通过这个方法启用系统 DPI 感知。从 Windwos 8.1 开始，微软加入了每个显示器 DPI 感知，这时候 `SetProcessDpiAwareness` 才开始出现。到了 Windows 10 1703，即秋季创意者更新，微软加入了 `SetProcessDpiAwarenessContext` 用于启用更加完善的每个显示器 DPI 感知（V2）。
