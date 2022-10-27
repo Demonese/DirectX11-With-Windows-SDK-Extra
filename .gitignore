@@ -1,2 +1,6 @@
 .vscode/*
 node_modules/*
+sample/DirectX11-With-Windows-SDK-Extra/**/.vs/*
+sample/DirectX11-With-Windows-SDK-Extra/**/x64/*
+sample/DirectX11-With-Windows-SDK-Extra/**/Debug/*
+sample/DirectX11-With-Windows-SDK-Extra/**/Release/*
