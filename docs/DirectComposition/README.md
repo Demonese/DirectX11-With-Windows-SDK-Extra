@@ -4,5 +4,5 @@ DirectComposition 是开发现代 Windows 应用程序时经常被忽略的组�
 
 目录：
 * [01 版本差异](DirectComposition/01-Versions.md)
-* [02 初始化（施工中）](DirectComposition/02-Initialization.md)
+* [02 初始化](DirectComposition/02-Initialization.md)
 * [官方文档翻译（施工中）](DirectComposition/MSDN-Translation/README.md)
