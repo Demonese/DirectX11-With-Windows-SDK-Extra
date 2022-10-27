@@ -59,7 +59,7 @@ namespace RuntimeLoader
 			hr = CreateDevice(pDevice, IID_PPV_ARGS(&pDesktopDevice));
 			if (FAILED(hr)) return hr;
 			hr = pDesktopDevice->QueryInterface(IID_PPV_ARGS(ppDevice));
-			if (ppDesktopDevice) *ppDesktopDevice = pDesktopDevice;
+			if (ppDesktopDevice) *ppDesktopDevice = pDesktopDevice; else pDesktopDevice->Release();
 			return hr;
 		}
 		else
@@ -76,7 +76,7 @@ namespace RuntimeLoader
 			hr = pDesktopDevice->CreateVisual(&pVisual2);
 			if (FAILED(hr)) return hr;
 			hr = pVisual2->QueryInterface(IID_PPV_ARGS(ppVisual));
-			if (ppVisual2) *ppVisual2 = pVisual2;
+			if (ppVisual2) *ppVisual2 = pVisual2; else pVisual2->Release();
 			return hr;
 		}
 		else
